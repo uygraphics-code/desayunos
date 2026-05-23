@@ -1394,5 +1394,14 @@ document.addEventListener('keydown', e=>{ if(e.key==='Escape') document.querySel
 cargarTodo();
 
 </script>
+
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js');
+}
+</script>
+  
 </body>
 </html>
